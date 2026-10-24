@@ -1,0 +1,60 @@
+{
+  "name": "dsh-sidebar-organizer",
+  "version": "0.2.3",
+  "description": "本插件用于将 DSH 左侧栏工作区上方和下方的按钮/面板折叠成可展开分组，并允许手动调整排序；特定按钮/面板可通过「显示 / 摘要 / 悬浮」方式避免折叠，（预期）能对复合条目与图表整块生效。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "license": "MIT",
+  "author": "godcide",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/godcide/dsh-sidebar-organizer.git"
+  },
+  "homepage": "https://github.com/godcide/dsh-sidebar-organizer#readme",
+  "bugs": {
+    "url": "https://github.com/godcide/dsh-sidebar-organizer/issues"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "sidebar",
+    "collapse",
+    "ui"
+  ],
+  "engines": {
+    "dsh": ">=0.2.1-rc.1 <0.3.0-0",
+    "node": ">=22"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    },
+    "catalog": {
+      "category": "ui",
+      "summary": {
+        "en": "Folds the DSH sidebar groups above and below the workspace list into collapsible, reorderable sections. Items opt out via Show / Summary / Float; expected to act on composite rows and charts whole.",
+        "zh": "本插件用于将 DSH 左侧栏工作区上方和下方的按钮/面板折叠成可展开分组，并允许手动调整排序；特定按钮/面板可通过「显示 / 摘要 / 悬浮」方式避免折叠，（预期）能对复合条目与图表整块生效。"
+      },
+      "capabilities": []
+    },
+    "compatibility": {
+      "dsh": ">=0.2.1-rc.1 <0.3.0-0"
+    }
+  }
+}

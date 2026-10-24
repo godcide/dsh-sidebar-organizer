@@ -1,0 +1,7 @@
+node_modules/
+dist/
+*.tgz
+.DS_Store
+
+# 从宿主 asar 提取的参考副本，不随仓库分发
+_ref/

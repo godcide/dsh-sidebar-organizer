@@ -1,0 +1,6 @@
+# dsh-sidebar-organizer bundle patch
+# 把本插件插进 profile 的插件层。安装后本层自动生效；
+# 不要再往 profile 的 cordis.patch.yml 手动 insert 同一个 id（重复 id 会让加载器报错起不来）。
+- insert:
+    - id: dsh-sidebar-organizer
+      name: 'dsh-sidebar-organizer'
